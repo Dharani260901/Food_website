@@ -1,0 +1,38 @@
+.track-container {
+  width: 90%;
+  margin: 20px auto;
+  padding: 15px;
+}
+
+.track-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #4b7bec;
+  margin-bottom: 10px;
+}
+
+.track-info {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.track-map-wrapper {
+  width: 100%;
+  height: 80vh;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid #ececec;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .track-title {
+    font-size: 20px;
+  }
+
+  .track-map-wrapper {
+    height: 70vh;
+  }
+}

@@ -1,5 +1,11 @@
 import mongoose from 'mongoose'
 
-const connectDB = async () => {
-    (await mongoose.connect(MONGODB_URI)).isObjectIdOrHexString(()=>console.log("DB Connected!"))
+export const connectDB = async () => {
+  try {
+    await mongoose.connect(process.env.MONGO_URI)
+    console.log("DB Connected!")
+  } catch (error) {
+    console.error("DB connection failed:", error.message)
+    process.exit(1)
+  }
 }

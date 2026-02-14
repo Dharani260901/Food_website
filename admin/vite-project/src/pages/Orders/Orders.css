@@ -1,0 +1,85 @@
+.order.add {
+    padding: 50px;
+    width: 80%;
+}
+
+.order-list {
+    margin-top: 30px;
+}
+
+.order-item {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr;
+    align-items: start;
+    gap: 30px;
+    border: 1px solid #ff6347;
+    padding: 20px;
+    margin: 30px 0px;
+    font-size: 14px;
+    color: #505050;
+    border-radius: 4px;
+}
+
+.order-item img {
+    margin-top: 40px;
+    margin-left: 10px;
+    width: 50px;
+}
+
+.order-item-food, 
+.order-item-name {
+    font-weight: 600;
+}
+
+.order-item-name {
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.order-item-address {
+    margin-bottom: 10px;
+}
+
+.order-item-phone {
+    font-weight: 500;
+}
+
+/* Styles for the Price and Item count columns */
+.order-item p:nth-child(3), 
+.order-item p:nth-child(4) {
+    align-self: center;
+}
+
+.order-item select {
+    background-color: #fff2ef;
+    border: 1px solid #ff6347;
+    width: max-content;
+    padding: 10px;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: center;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 900px) {
+    .order-item {
+        grid-template-columns: 0.5fr 2fr 1fr;
+        font-size: 12px;
+        gap: 15px;
+        padding: 15px 8px;
+    }
+    .order-item select {
+        padding: 5px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    .order-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
